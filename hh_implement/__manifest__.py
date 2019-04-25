@@ -12,7 +12,9 @@
     'license': 'LGPL-3',
     "external_dependencies": {"python": [], "bin": []},
     'depends': ['base', 'web'],
-
+    'images': [
+        'static/description/icon.png'
+    ],
     'qweb': [
         # 'static/src/xml/*.xml',
         # 'static/src/xml/custom_base_user_menu.xml',

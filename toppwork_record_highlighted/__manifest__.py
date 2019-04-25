@@ -17,7 +17,7 @@
 
     ],
     'images': [
-        'static/description/highlight_selected_record.png'
+        'static/description/icon.png'
     ],
     'qweb': [],
     'installable': True,

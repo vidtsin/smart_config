@@ -19,6 +19,9 @@
         'views/views.xml',
         'views/templates.xml',
     ],
+    'images': [
+        'static/description/icon.png'
+    ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',

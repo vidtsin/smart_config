@@ -12,7 +12,9 @@
     'license': 'LGPL-3',
     "external_dependencies": {"python": [], "bin": []},
     'depends': ['base'],
-
+    'images': [
+        'static/description/icon.png'
+    ],
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',

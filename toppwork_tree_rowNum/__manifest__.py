@@ -16,7 +16,9 @@
     'data': [
              'views/listview_templates.xml',
              ],
-    "images": ["static/description/screen1.png"],
+    'images': [
+        'static/description/icon.png'
+    ],
     'qweb': [
             ],  
     
