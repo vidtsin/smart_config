@@ -29,6 +29,7 @@
         'views/company_logo_customize.xml',
     ],
     'price': 9.9,
+    'currency': 'EUR',
     'demo': [
         'demo/demo.xml',
     ],
