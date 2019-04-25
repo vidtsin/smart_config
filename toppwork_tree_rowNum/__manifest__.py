@@ -1,7 +1,8 @@
 # -*- encoding: utf-8 -*-
 {
     'name': "Toppwork Tree Row Num",
-    'version': '12.0.0',
+    'version': '11.0',
+    "external_dependencies": {"python": [], "bin": []},
     'summary': 'Adds a column which shows row number on the List/Tree view.',
     'description': """Adds a column which shows row number on the List/Tree view.""",
     'author': "Toppwork",

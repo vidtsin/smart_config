@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Toppwork Highlight List View',
-    'version': '12.0.1.0',
+    'version': '11.0',
+    "external_dependencies": {"python": [], "bin": []},
     'description': """
                     Highlights the record being on mouse-over or selected.
                     """,

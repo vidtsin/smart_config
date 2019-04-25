@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': "Smart Plugins",
-    'version': '1.0',
+    'version': '11.0',
     'sequence': 1,
     'summary': """
         A collection of modules built to enhance the overall usability 
@@ -37,6 +37,7 @@
         'views/hide_create_or_import_btn_detail.xml',
         'views/company_logo_customize.xml',
     ],
+    "external_dependencies": {"python": [], "bin": []},
     # 'price': 9.9,
     # 'currency': 'EUR',
     'demo': [
