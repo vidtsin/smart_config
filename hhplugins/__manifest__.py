@@ -28,8 +28,8 @@
         'views/hide_create_or_import_btn_detail.xml',
         'views/company_logo_customize.xml',
     ],
-    'price': 9.9,
-    'currency': 'EUR',
+    # 'price': 9.9,
+    # 'currency': 'EUR',
     'demo': [
         'demo/demo.xml',
     ],
