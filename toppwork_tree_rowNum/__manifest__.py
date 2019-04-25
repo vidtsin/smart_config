@@ -2,13 +2,15 @@
 {
     'name': "Toppwork Tree Row Num",
     'version': '11.0',
-    "external_dependencies": {"python": [], "bin": []},
-    'summary': 'Adds a column which shows row number on the List/Tree view.',
-    'description': """Adds a column which shows row number on the List/Tree view.""",
-    'author': "Toppwork",
+    'summary': """
+            Adds a column which shows row number on the List/Tree view.""",
+    'description': """
+            Adds a column which shows row number on the List/Tree view.
+        """,
     'website': "http://www.toppwork.com",
     'category': 'Productivity',
     'license': 'LGPL-3',
+    "external_dependencies": {"python": [], "bin": []},
     "depends": ['web'],
     "live_test_url": "https://odoo.sheliyainfotech.com/contactus?description=demo:rowno_in_tree&odoo_version=12.0",
     'data': [

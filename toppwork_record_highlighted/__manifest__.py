@@ -2,15 +2,15 @@
 {
     'name': 'Toppwork Highlight List View',
     'version': '11.0',
-    "external_dependencies": {"python": [], "bin": []},
+    'summary': """
+            Highlights the record being on mouse-over or selected.""",
     'description': """
-                    Highlights the record being on mouse-over or selected.
-                    """,
-    'summary': """Highlights the record being on mouse-over or selected.""",
-    'author': "Toppwork",
+            Highlights the record being on mouse-over or selected.
+        """,
     'website': "http://www.toppwork.com",
     'category': 'Productivity',
     'license': 'LGPL-3',
+    "external_dependencies": {"python": [], "bin": []},
     'depends': ['web'],
     'data': [
         'views/template.xml',

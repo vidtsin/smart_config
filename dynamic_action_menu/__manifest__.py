@@ -1,25 +1,17 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Action Menu Filter",
-
-    'summary': """
-        Custom pick any action menu items you need for each page """,
-
-    'description': """
-       
-    """,
-
-    'author': "HungHing -- Toppwork",
-    'website': "http://www.hunghingprinting.com",
-
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
-    # for the full list
-    'category': 'Uncategorized',
+    'name': "Toppwork Action Menu Filter",
     'version': '11.0',
+    'summary': """
+            Customize Action Items under the Action dropdown menu. Line separators are also available from this module.
+            """,
+    'description': """
+            Customize Action Items under the Action dropdown menu. Line separators are also available from this module.
+        """,
+    'website': "http://www.toppwork.com",
+    'category': 'Productivity',
+    'license': 'LGPL-3',
     "external_dependencies": {"python": [], "bin": []},
-
-    # any module necessary for this one to work correctly
     'depends': ['base'],
 
     # always loaded
