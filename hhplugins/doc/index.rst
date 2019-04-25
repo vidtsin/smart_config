@@ -1,24 +1,11 @@
-Documentation
-=========================
-
-.. contents::
-
-Before Install Smart Config Module
-------------------------------------
-
+1.Before Install Smart Config Module
 Replace __manifest__.py file in hhplugins with file hhplugins/static/doc/__manifest__.py
 
-
-Add Files
------------
+2.Add Files
 Add all files to your ODOO 'addons' directory
 
+3.Install Our Module
+Open Odoo apps, find Smart Config module which by default should be the first app. Click Install and wait for page reloading.
 
-Install Our Module
-----------------------------
-Open Odoo apps, find Smart Config module which by default should be the first app.
-Click Install and wait for page reloading.
-
-Start
---------
+4.Start
 Start your journey by open the Smart Config app.
