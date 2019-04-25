@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hhplugins_dynamic_action_menu_detail_view_form" model="ir.ui.view">
+            <field name="name">hhplugins.dynamic.action.menu.detail.view.form</field>
+            <field name="model">hhplugins.dynamic.action.menu.detail</field>
+            <field name="arch" type="xml">
+                <form create="false">
+                    <sheet>
+                        <html>
+                            <section class="oe_container oe_spaced">
+                                <h2 class="oe_slogan text-center" style="color:#875A7B; font-size:30px;">Dynamic Action Menu</h2>
+                                <div style="height: 32px;"/>
+                            </section>
+
+                            <section class="oe_container">
+                                <div class="oe_spaced" style="padding-left: 32px; padding-right: 32px; display: flex; flex-flow: row wrap;
+                                    justify-content: space-between; font-size: 20px;">
+                                    <div style="width: 68%;">
+                                        <img class="center-block" src="hhplugins/static/description/dynamic_action_menu/dynamic_action_menu_code_before.PNG" style="width: 100%;  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);"/>
+                                    </div>
+
+                                    <div style="display: flex; flex-flow: column; justify-content: center;width: 32%">
+                                        <p style="text-align: center; font-weight: bold; width: 100%">Define three actions for a model</p>
+                                    </div>
+                                </div>
+                                <div style="height: 32px;"/>
+                            </section>
+
+                            <section class="oe_container oe_spaced"></section>
+
+                            <section class="oe_container">
+                                <div class="oe_spaced" style="padding-left: 32px; padding-right: 32px; display: flex; flex-flow: row wrap;
+                                    justify-content: space-between; font-size: 20px;">
+                                    <div style="width: 68%;">
+                                        <img class="center-block" src="hhplugins/static/description/dynamic_action_menu/dynamic_action_menu_view_before.PNG" style="width: 100%;  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);"/>
+                                    </div>
+
+                                    <div style="display: flex; flex-flow: column; justify-content: center;width: 32%">
+                                        <p style="text-align: center; font-weight: bold; width: 100%">Odoo default action menu</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="oe_container oe_spaced"></section>
+
+                            <section>
+                                <div style="height: 32px;"/>
+                                <div class="oe_spaced" style="padding-left: 32px; padding-right: 32px; display: flex; flex-flow: row wrap;
+                                        justify-content: space-between; font-size: 20px; margin-top: 32px;">
+                                    <div style="display: flex; flex-flow: column; justify-content: center;width: 32%;">
+                                        <p style="text-align: center; font-weight: bold; width: 100%">Add keyword 'actionItems' in ir.actions.act_window</p>
+                                        <p style="text-align: left; font-size: 15px;">**You also could customize form view**</p>
+                                    </div>
+                                    <div style="width: 68%;">
+                                        <img class="center-block" src="hhplugins/static/description/dynamic_action_menu/dynamic_action_menu_code_after.PNG" style="width: 100%;  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);"/>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="oe_container oe_spaced"></section>
+
+                            <section>
+                                <div style="height: 32px;"/>
+                                <div class="oe_spaced" style="padding-left: 32px; padding-right: 32px; display: flex; flex-flow: row wrap;
+                                        justify-content: space-between; font-size: 20px; margin-top: 32px;">
+                                    <div style="display: flex; flex-flow: column; justify-content: center;width: 32%;">
+                                        <p style="text-align: center; font-weight: bold; width: 100%">Select the checkbox on configuration view</p>
+                                    </div>
+                                    <div style="width: 68%;">
+                                        <img class="center-block" src="hhplugins/static/description/dynamic_action_menu/dynamic_action_menu_setting.PNG"
+                                             style="width: 100%;  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);"
+                                             alt="Change on config view"/>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="oe_container oe_spaced"></section>
+
+                            <section>
+                                <div style="height: 32px;"/>
+                                <div class="oe_spaced" style="padding-left: 32px; padding-right: 32px; display: flex; flex-flow: row wrap;
+                                        justify-content: space-between; font-size: 20px; margin-top: 32px;">
+                                    <div style="width: 68%;">
+                                        <img class="center-block" src="hhplugins/static/description/dynamic_action_menu/dynamic_action_menu_view_after.PNG" style="width: 100%;  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);"/>
+                                    </div>
+                                    <div style="display: flex; flex-flow: column; justify-content: center; width: 32%;">
+                                        <p style="text-align: center; font-weight: bold; width: 100%">Customized action menu</p>
+                                        <p style="text-align: center; font-size:17px;">* Display action item(s) as you wish *</p>
+                                        <p style="text-align: center; font-size:17px;">* Add separator line between items *</p>
+                                    </div>
+                                </div>
+                            </section>
+
+
+
+                            <!--<section class="oe_container oe_spaced"></section>-->
+
+                            <!--<section class="oe_container lead">-->
+                                <!--<div class="oe_row oe_spaced">-->
+                                    <!--<div class="oe_span12">-->
+                                        <!--<h2 class="text-center"><a> Help &amp; Support</a></h2>-->
+                                        <!--<p class="text-center"><a> In case of any query reach out to us.</a></p>-->
+                                    <!--</div>-->
+                                    <!--<br/>-->
+                                   <!--<div class="oe_slogan oe_spaced text-center">-->
+                                        <!--<span >support@knacktechs.com</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</section>-->
+                        </html>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="hhplugins_dynamic_action_menu_detail_action" model="ir.actions.act_window">
+            <field name="name">Checkbox Remover Detail</field>
+            <field name="res_model">hhplugins.dynamic.action.menu.detail</field>
+            <field name="view_mode">form</field>
+            <!--<field name="context">{'module' : 'hhplugins'}</field>-->
+        </record>
+
+        <menuitem id="hhplugins_dynamic_action_menu_detail_menu" name="Dynamic Action Menu Detail" sequence="1"
+            parent="hhplugins_technical_module_detail_menu" action="hhplugins_dynamic_action_menu_detail_action" />
+
+    </data>
+</odoo>

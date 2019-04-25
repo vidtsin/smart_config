@@ -1,0 +1,10 @@
+table.o_list_view tbody tr:hover{
+    background-color:#ebe0e8;
+}
+table.o_list_view tbody tr:nth-of-type(2n+1):hover{
+    background-color:#ebe0e8 !important;
+}
+table.o_list_view tbody tr.row_selected{
+     background-color:#b894ae;
+     color:#fff;
+}

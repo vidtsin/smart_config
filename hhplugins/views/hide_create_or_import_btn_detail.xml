@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hhplugins_hide_create_import_button_detail_view_form" model="ir.ui.view">
+            <field name="name">hhplugins.hide.create.import.button.detail.view.form</field>
+            <field name="model">hhplugins.hide.create.import.button.detail</field>
+            <field name="arch" type="xml">
+                <form create="false">
+                    <sheet>
+                        <html>
+                            <section class="oe_container oe_spaced">
+                                <h2 class="oe_slogan text-center" style="color:#875A7B; font-size:30px;">Hide Create/Imort Button</h2>
+                                <div style="height: 32px;"/>
+                            </section>
+
+                            <section class="oe_container">
+                                <div class="oe_spaced" style="padding-left: 32px; padding-right: 32px; display: flex; flex-flow: row wrap;
+                                    justify-content: space-between; font-size: 20px;">
+                                    <div style="width: 68%;">
+                                        <img class="center-block" src="hhplugins/static/description/hide_create_or_import_btn/hide_create_import_view_before.PNG" style="width: 100%;  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);"/>
+                                    </div>
+
+                                    <div style="display: flex; flex-flow: column; justify-content: center;width: 32%">
+                                        <p style="text-align: center; font-weight: bold; width: 100%"> Odoo List/Tree view header with create and import button</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="oe_container oe_spaced"></section>
+
+                            <section>
+                                <div style="height: 32px;"/>
+                                <div class="oe_spaced" style="padding-left: 32px; padding-right: 32px; display: flex; flex-flow: row wrap;
+                                        justify-content: space-between; font-size: 20px; margin-top: 32px;">
+                                    <div style="display: flex; flex-flow: column; justify-content: center;width: 32%;">
+                                        <p style="text-align: center; font-weight: bold; width: 100%">Add keyword 'hide_create_btn' in ir.actions.act_window to hide CREATE button</p>
+                                    </div>
+                                    <div style="width: 68%;">
+                                        <img class="center-block" src="hhplugins/static/description/hide_create_or_import_btn/hide_create_import_code_hideCreate.PNG" style="width: 100%;  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);"/>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="oe_container oe_spaced"></section>
+
+                            <section>
+                                <div style="height: 32px;"/>
+                                <div class="oe_spaced" style="padding-left: 32px; padding-right: 32px; display: flex; flex-flow: row wrap;
+                                        justify-content: space-between; font-size: 20px; margin-top: 32px;">
+                                    <div style="display: flex; flex-flow: column; justify-content: center;width: 32%;">
+                                        <p style="text-align: center; font-weight: bold; width: 100%">Select the checkbox on configuration view</p>
+                                    </div>
+                                    <div style="width: 68%;">
+                                        <img class="center-block" src="hhplugins/static/description/hide_create_or_import_btn/hide_create_import_view_setting.PNG" style="width: 100%;  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);"/>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="oe_container oe_spaced"></section>
+
+                            <section>
+                                <div style="height: 32px;"/>
+                                <div class="oe_spaced" style="padding-left: 32px; padding-right: 32px; display: flex; flex-flow: row wrap;
+                                        justify-content: space-between; font-size: 20px; margin-top: 32px;">
+                                    <div style="display: flex; flex-flow: column; justify-content: center;width: 32%;">
+                                        <p style="text-align: center; font-weight: bold; width: 100%">Result</p>
+                                    </div>
+                                    <div style="width: 68%;">
+                                        <img class="center-block" src="hhplugins/static/description/hide_create_or_import_btn/hide_create_import_view_after_hideCreate.PNG" style="width: 100%;  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);"/>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="oe_container oe_spaced"></section>
+
+                            <section>
+                                <div style="height: 32px;"/>
+                                <div class="oe_spaced" style="padding-left: 32px; padding-right: 32px; display: flex; flex-flow: row wrap;
+                                        justify-content: space-between; font-size: 20px; margin-top: 32px;">
+                                    <div style="width: 68%;">
+                                        <img class="center-block" src="hhplugins/static/description/hide_create_or_import_btn/hide_create_import_code_hideImport.PNG" style="width: 100%;  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);"/>
+                                    </div>
+                                    <div style="display: flex; flex-flow: column; justify-content: center; width: 32%;">
+                                        <p style="text-align: center; font-weight: bold; width: 100%">Add keyword 'hide_import_btn' in ir.actions.act_window to hide IMPORT button</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="oe_container oe_spaced"></section>
+
+                            <section>
+                                <div style="height: 32px;"/>
+                                <div class="oe_spaced" style="padding-left: 32px; padding-right: 32px; display: flex; flex-flow: row wrap;
+                                        justify-content: space-between; font-size: 20px; margin-top: 32px;">
+                                    <div style="width: 68%;">
+                                        <img class="center-block" src="hhplugins/static/description/hide_create_or_import_btn/hide_create_import_view_after_hideImport.PNG" style="width: 100%;  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);"/>
+                                    </div>
+                                    <div style="display: flex; flex-flow: column; justify-content: center; width: 32%;">
+                                        <p style="text-align: center; font-weight: bold; width: 100%">Result</p>
+                                    </div>
+                                </div>
+                            </section>
+
+
+
+                            <!--<section class="oe_container oe_spaced"></section>-->
+
+                            <!--<section class="oe_container lead">-->
+                                <!--<div class="oe_row oe_spaced">-->
+                                    <!--<div class="oe_span12">-->
+                                        <!--<h2 class="text-center"><a> Help &amp; Support</a></h2>-->
+                                        <!--<p class="text-center"><a> In case of any query reach out to us.</a></p>-->
+                                    <!--</div>-->
+                                    <!--<br/>-->
+                                   <!--<div class="oe_slogan oe_spaced text-center">-->
+                                        <!--<span >support@knacktechs.com</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</section>-->
+                        </html>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="hhplugins_hide_create_import_button_detail_action" model="ir.actions.act_window">
+            <field name="name">Checkbox Remover Detail</field>
+            <field name="res_model">hhplugins.hide.create.import.button.detail</field>
+            <field name="view_mode">form</field>
+            <!--<field name="context">{'module' : 'hhplugins'}</field>-->
+        </record>
+
+        <menuitem id="hhplugins_hide_create_import_button_detail_menu" name="Hide Create/Import Button Detail" sequence="2"
+            parent="hhplugins_technical_module_detail_menu" action="hhplugins_hide_create_import_button_detail_action" />
+
+    </data>
+</odoo>

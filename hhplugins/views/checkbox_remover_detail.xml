@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hhplugins_checkbox_remover_detail_view_form" model="ir.ui.view">
+            <field name="name">hhplugins.checkbox.remover.detail.view.form</field>
+            <field name="model">hhplugins.checkbox.remover.detail</field>
+            <field name="arch" type="xml">
+                <form create="false">
+                    <sheet>
+                        <html>
+                            <section class="oe_container oe_spaced">
+                                <h2 class="oe_slogan text-center" style="color:#875A7B; font-size:30px;">Checkbox Remover</h2>
+                                <div style="height: 32px;"/>
+                            </section>
+
+                            <section class="oe_container">
+                                <div class="oe_spaced" style="padding-left: 32px; padding-right: 32px; display: flex; flex-flow: row wrap;
+                                    justify-content: space-between; font-size: 20px;">
+                                    <div style="width: 68%;">
+                                        <img class="center-block" src="hhplugins/static/description/checkbox_remover/checkbox_remover_view_before.jpg"
+                                             style="width: 100%;  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);"
+                                             alt="Original view of ODOO"/>
+                                    </div>
+
+                                    <div style="display: flex; flex-flow: column; justify-content: center;width: 32%">
+                                        <p style="text-align: center; font-weight: bold; width: 100%">Remove checkbox before records of Odoo List/Tree view</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="oe_container oe_spaced"></section>
+
+                            <section>
+                                <div style="height: 32px;"/>
+                                <div class="oe_spaced" style="padding-left: 32px; padding-right: 32px; display: flex; flex-flow: row wrap;
+                                        justify-content: space-between; font-size: 20px; margin-top: 32px;">
+                                    <div style="display: flex; flex-flow: column; justify-content: center;width: 32%;">
+                                        <p style="text-align: center; font-weight: bold; width: 100%">Add keyword 'checkbox' in ir.actions.act_window</p>
+                                    </div>
+                                    <div style="width: 68%;">
+                                        <img class="center-block" src="hhplugins/static/description/checkbox_remover/checkbox_remover_code.png"
+                                             style="width: 100%;  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);"
+                                             alt="code changing of checkbox remover"/>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="oe_container oe_spaced"></section>
+
+                            <section>
+                                <div style="height: 32px;"/>
+                                <div class="oe_spaced" style="padding-left: 32px; padding-right: 32px; display: flex; flex-flow: row wrap;
+                                        justify-content: space-between; font-size: 20px; margin-top: 32px;">
+                                    <div style="display: flex; flex-flow: column; justify-content: center;width: 32%;">
+                                        <p style="text-align: center; font-weight: bold; width: 100%">Select the checkbox on configuration view</p>
+                                    </div>
+                                    <div style="width: 68%;">
+                                        <img class="center-block" src="hhplugins/static/description/checkbox_remover/checkbox_remover_setting_after.png"
+                                             style="width: 100%;  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);"
+                                             alt="Change on config view"/>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="oe_container oe_spaced"></section>
+
+                            <section>
+                                <div style="height: 32px;"/>
+                                <div class="oe_spaced" style="padding-left: 32px; padding-right: 32px; display: flex; flex-flow: row wrap;
+                                        justify-content: space-between; font-size: 20px; margin-top: 32px;">
+                                    <div style="width: 68%;">
+                                        <img class="center-block" src="hhplugins/static/description/checkbox_remover/checkbox_remover_view_after.png"
+                                             style="width: 100%;  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);"
+                                             alt="Customized view after changing"/>
+                                    </div>
+                                    <div style="display: flex; flex-flow: column; justify-content: center; width: 32%;">
+                                        <p style="text-align: center; font-weight: bold; width: 100%">Clean list view</p>
+                                    </div>
+                                </div>
+                            </section>
+
+
+
+                            <!--<section class="oe_container oe_spaced"></section>-->
+
+                            <!--<section class="oe_container lead">-->
+                                <!--<div class="oe_row oe_spaced">-->
+                                    <!--<div class="oe_span12">-->
+                                        <!--<h2 class="text-center"><a> Help &amp; Support</a></h2>-->
+                                        <!--<p class="text-center"><a> In case of any query reach out to us.</a></p>-->
+                                    <!--</div>-->
+                                    <!--<br/>-->
+                                   <!--<div class="oe_slogan oe_spaced text-center">-->
+                                        <!--<span >support@knacktechs.com</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</section>-->
+                        </html>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="hhplugins_checkbox_remover_detail_action" model="ir.actions.act_window">
+            <field name="name">Checkbox Remover Detail</field>
+            <field name="res_model">hhplugins.checkbox.remover.detail</field>
+            <field name="view_mode">form</field>
+            <!--<field name="context">{'module' : 'hhplugins'}</field>-->
+        </record>
+
+        <menuitem id="hhplugins_technical_module_detail_menu" name="Technical Module Detail" sequence="3"
+                parent="hhplugins_menu_root" groups="hhplugins.group_hhplugins_admin"/>
+        <menuitem id="hhplugins_checkbox_remover_detail_menu" name="Checkbox Remover Detail" sequence="0"
+            parent="hhplugins_technical_module_detail_menu" action="hhplugins_checkbox_remover_detail_action" />
+
+    </data>
+</odoo>

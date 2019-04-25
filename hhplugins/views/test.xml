@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hh_module_config_test_view_form" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.test.hhplugins</field>
+            <field name="model">res.config.settings</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="toppwork_dynamic_list"/>
+                    <field name="toppwork_record_highlighted"/>
+                    <field name="toppwork_tree_rowNum"/>
+                    <field name="checkbox_remover"/>
+                    <field name="dynamic_action_menu"/>
+                    <field name="hide_create_or_import"/>
+                    <field name="test_string"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="hhplugins_module_configuration_test_action" model="ir.actions.act_window">
+            <field name="name">Test Application</field>
+            <field name="res_model">res.config.settings</field>
+            <field name="view_mode">tree</field>
+            <field name="context">{'hide_create_btn':False,
+            'hide_import_btn':True,
+            'checkbox': False,
+            'actionItems':{
+                       'list': {
+                                'action':{'2': True,'3': True},
+                                'other':{'Export':False, 'Delete':True},
+                                'line_break':{'0':True},
+                               },
+                      }}</field>
+
+        </record>
+
+        <menuitem id="hhplugins_module_configuration_test_menu" name="Test Application" sequence="2"
+                parent="hhplugins_menu_root" action="hhplugins_module_configuration_test_action" />
+
+        <record id="hh_module_config_test1_action_server" model="ir.actions.server">
+            <field name="name">Action NO.1</field>
+            <field name="type">ir.actions.server</field>
+            <field name="sequence" eval="1"/>
+            <field name="model_id" ref="model_res_config_settings"/>
+            <field name="binding_model_id" ref="model_res_config_settings"/>
+            <field name="state">code</field>
+            <field name="code">
+                action = model.action1(records)
+            </field>
+        </record>
+
+        <record id="hh_module_config_test2_action_server" model="ir.actions.server">
+            <field name="name">Action NO.2</field>
+            <field name="type">ir.actions.server</field>
+            <field name="sequence" eval="2"/>
+            <field name="model_id" ref="model_res_config_settings"/>
+            <field name="binding_model_id" ref="model_res_config_settings"/>
+            <field name="state">code</field>
+            <field name="code">
+                action = model.action2(records)
+            </field>
+        </record>
+
+        <record id="hh_module_config_test3_action_server" model="ir.actions.server">
+            <field name="name">Action NO.3</field>
+            <field name="type">ir.actions.server</field>
+            <field name="sequence" eval="3"/>
+            <field name="model_id" ref="model_res_config_settings"/>
+            <field name="binding_model_id" ref="model_res_config_settings"/>
+            <field name="state">code</field>
+            <field name="code">
+                action = model.action3(records)
+            </field>
+        </record>
+
+    </data>
+</odoo>

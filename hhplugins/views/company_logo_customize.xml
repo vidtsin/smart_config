@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <record id="view_document_file_form" model="ir.ui.view" >
+            <field name="name">hhplugins.company.logo.customize.form</field>
+            <field name="model">hhplugins.company.logo.customize</field>
+            <field name="inherit_id" ref="base.view_attachment_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='type']" position="after">
+                    <field name="res_model" groups="hhplugins.group_hhplugins_admin"/>
+                    <field name="datas_fname" groups="hhplugins.group_hhplugins_admin"/>
+                    <field name="create_uid" groups="hhplugins.group_hhplugins_admin"/>
+                    <field name="create_date" groups="hhplugins.group_hhplugins_admin"/>
+                </xpath>
+                <xpath expr="//field[@name='type']" position="attributes">
+                   <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_document_file_tree" model="ir.ui.view" >
+            <field name="name">hhplugins.company.logo.customize.tree</field>
+            <field name="model">hhplugins.company.logo.customize</field>
+            <field name="inherit_id" ref="base.view_attachment_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="attributes">
+                    <attribute name="create">false</attribute>
+                </xpath>
+                <xpath expr="//field[@name='res_field']" position="attributes">
+                   <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='res_id']" position="attributes">
+                   <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <!--<record id="view_document_file_kanban" model="ir.ui.view" >-->
+            <!--<field name="name">hhplugins.company.logo.customize.kanban</field>-->
+            <!--<field name="model">hhplugins.company.logo.customize</field>-->
+            <!--<field name="inherit_id" ref="mail.view_document_file_kanban"/>-->
+            <!--<field name="arch" type="xml">-->
+                <!--<xpath expr="//img" position='replace'>-->
+                    <!--<img t-attf-src="/web/image/hhplugins/logo.png"/>-->
+                <!--</xpath>-->
+            <!--</field>-->
+        <!--</record>-->
+
+        <record id="hhplugins_action_attachment" model="ir.actions.act_window">
+            <field name="name">Company Logos</field>
+            <field name="res_model">hhplugins.company.logo.customize</field>
+            <field name="view_mode">tree,form</field>
+            <!--<field name="domain">[('res_model', '=', 'hhplugins.company.logo.customize')]</field>-->
+            <field name="help">Create your own company logo</field>
+        </record>
+
+        <!--&lt;!&ndash;view specification&ndash;&gt;-->
+        <!--<record id="hhplugins_view_company_logo_specification_kanban" model="ir.actions.act_window.view">-->
+            <!--<field name="sequence" eval="1"/>-->
+            <!--<field name="view_mode">kanban</field>-->
+            <!--<field name="view_id" ref="view_document_file_kanban"/>-->
+            <!--<field name="act_window_id" ref="hhplugins_action_attachment"/>-->
+        <!--</record>-->
+
+        <record id="hhplugins_view_company_logo_specification_form" model="ir.actions.act_window.view">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_document_file_form"/>
+            <field name="act_window_id" ref="hhplugins_action_attachment"/>
+        </record>
+
+        <record id="hhplugins_view_company_logo_specification_tree" model="ir.actions.act_window.view">
+            <field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_document_file_tree"/>
+            <field name="act_window_id" ref="hhplugins_action_attachment"/>
+        </record>
+
+        <menuitem id="hhplugins_company_logo_menu" name="Company Logos" sequence="4"
+            parent="hhplugins_technical_module_detail_menu" action="hhplugins_action_attachment" />
+    </data>
+</odoo>

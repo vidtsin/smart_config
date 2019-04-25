@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="res_config_settings_view_form" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.inherit.hhplugins</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority" eval="90"/>
+            <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('settings')]" position="inside">
+                    <div class="app_settings_block" data-string="Smart Config" data-key="hhplugins" string="Smart Config"
+                    groups="hhplugins.group_hhplugins_user">
+                        <h2>Module To Install</h2>
+                        <div class="row mt16 o_settings_container">
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="toppwork_dynamic_list"/>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label string="Install Dynamic List" for="toppwork_dynamic_list"/>
+                                    <div class="text-muted">
+                                      Show/Hide column(s) within a dropdown box on the List/Tree view.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="toppwork_record_highlighted"/>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label string="Install Mouse-over Highlight" for="toppwork_record_highlighted"/>
+                                    <div class="text-muted">
+                                        Highlights the record being on mouse-over or selected.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="toppwork_tree_rowNum"/>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label string="InstallList View Row Number" for="toppwork_tree_rowNum"/>
+                                    <div class="text-muted">
+                                        Adds a column which shows row number on the List/Tree view.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="hh_implement"/>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label string="Customize User Menu" for="hh_implement"/>
+                                    <div class="text-muted">
+                                        By installing this module, user can customize drop down user menu.
+                                    </div>
+                                    <div class="content-group" attrs="{'invisible': [('hh_implement','=',False)]}">
+                                        <div class="mt8">
+                                            <div class="my_o_setting_left_pane" >
+                                                <field name="hh_implement_documentation" class="my_hh_implement_field"/>
+                                                <label class="text-muted margin_lable" for="hh_implement_documentation"/>
+                                                <br/>
+
+                                                <field name="hh_implement_support" class="my_hh_implement_field"/>
+                                                <label class="text-muted margin_lable" for="hh_implement_support"/>
+                                                <br/>
+
+                                                <field name="hh_implement_shortcuts" class="my_hh_implement_field"/>
+                                                <label class="text-muted margin_lable" for="hh_implement_shortcuts"/>
+                                                <br/>
+                                            </div>
+                                            <div class="my_o_setting_right_pane" >
+                                                <field name="hh_implement_settings" class="my_hh_implement_field"/>
+                                                <label class="text-muted margin_lable" for="hh_implement_settings"/>
+                                                <br/>
+
+                                                <field name="hh_implement_account" class="my_hh_implement_field"/>
+                                                <label class="text-muted margin_lable" for="hh_implement_account"/>
+
+                                                <!--<field name="hh_implement_activity_icon" class="my_hh_implement_field"/>-->
+                                                <!--<label class="text-muted margin_lable" for="hh_implement_activity_icon"/>-->
+                                                <!--<br/>-->
+
+                                                <!--<field name="hh_implement_message_icon" class="my_hh_implement_field"/>-->
+                                                <!--<label class="text-muted margin_lable" for="hh_implement_message_icon"/>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="company_logo_customize"/>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label string="Company Logo Customization" for="company_logo_customize"/>
+                                    <div class="text-muted">
+                                        By installing this module, you can use your own company logo instead of ODOO.
+                                    </div>
+                                    <div class="content-group" attrs="{'invisible': [('company_logo_customize','=',False)]}">
+                                        <div class="mt8">
+                                            <button name="upload_company_logo" icon="fa-arrow-right" type="object" string="Upload New Logo" class="btn-link"/>
+                                        </div>
+                                        <!--<div class="mt8">-->
+                                            <!--&lt;!&ndash;<button name="download_company_logo" icon="fa-arrow-right" type="object" string="Download Uploaded Logo" class="btn-link"/>&ndash;&gt;-->
+                                            <!--<img t-attf-src=".\\addons\hhplugins\static\img\logo.png" title="Company Logo" style="width:40%;" aria-hidden="true"></img>-->
+                                        <!--</div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2>Advanced Module To Install</h2>
+                        <div class="row mt16 o_settings_container">
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="checkbox_remover"/>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label string="Install Checkbox Remover" for="checkbox_remover"/>
+                                    <div class="text-muted">
+                                        Hides the checkbox before each record on the List/Tree view.
+                                    </div>
+                                    <div class="content-group" attrs="{'invisible': [('checkbox_remover','=',False)]}">
+                                        <div class="mt16">
+                                            <button name="show_checkbox_remover_detail_page" icon="fa-arrow-right" type="object" string="See Details" class="btn-link"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="dynamic_action_menu"/>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label string="Install Dynamic Action Menu" for="dynamic_action_menu"/>
+                                    <div class="text-muted">
+                                        Customize Action Items under the Action dropdown menu. Line separators are also available from this module.
+                                    </div>
+                                    <div class="content-group" attrs="{'invisible': [('dynamic_action_menu','=',False)]}">
+                                        <div class="mt16">
+                                            <button name="show_dynamic_action_menu_detail_page" icon="fa-arrow-right" type="object" string="See Details" class="btn-link"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="hide_create_or_import"/>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label string="Install Create/Import Button Remover" for="hide_create_or_import"/>
+                                    <div class="text-muted">
+                                        Hides the Create and/or the Import button on the List/Tree view on demand.
+                                    </div>
+                                    <div class="content-group" attrs="{'invisible': [('hide_create_or_import','=',False)]}">
+                                        <div class="mt16">
+                                            <button name="show_hide_create_or_import_btn_detail_page" icon="fa-arrow-right" type="object" string="See Details" class="btn-link"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="hhplugins_module_configuration_action" model="ir.actions.act_window">
+            <field name="name">Settings</field>
+            <field name="res_model">res.config.settings</field>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+            <field name="context">{'module' : 'hhplugins'}</field>
+        </record>
+
+      <menuitem id="hhplugins_menu_root" name="Smart Config" sequence="0" web_icon="hhplugins,static/description/icon.png"
+
+                groups="hhplugins.group_hhplugins_user"/>
+      <menuitem id="hhplugins_module_configuration_menu" name="Settings Modules" sequence="1" parent="hhplugins_menu_root"
+                action="hhplugins_module_configuration_action"
+                groups="hhplugins.group_hhplugins_user"/>
+    </data>
+</odoo>

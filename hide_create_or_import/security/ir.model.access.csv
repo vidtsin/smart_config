@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hide_create_btn_only_hide_create_btn_only,hide_create_btn_only.hide_create_btn_only,model_hide_create_btn_only_hide_create_btn_only,,1,0,0,0

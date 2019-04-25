@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--<template id="assets" name="record_highlighted assets" inherit_id="web.assets_backend">-->
+            <!--<xpath expr="." position="inside">-->
+                <!--<script type="text/javascript" src="/hhplugins/static/src/js/record_highlighted.js"></script>-->
+            <!--</xpath>-->
+        <!--</template>-->
+
+        <!--<template id="assets_common" name="record_highlighted assets" inherit_id="web.assets_common">-->
+            <!--<xpath expr="." position="inside">-->
+                <!--<link rel="stylesheet" type="text/css" href="/hhplugins/static/src/css/record_highlighted.css"/>-->
+            <!--</xpath>-->
+        <!--</template>-->
+
+        <!--<template id="assets_backend" name="listview" inherit_id="web.assets_backend">-->
+            <!--<xpath expr="." position="inside">-->
+                <!--<script type="text/javascript" src="/hhplugins/static/src/js/dynamic_list.js"></script>-->
+            <!--</xpath>-->
+        <!--</template>-->
+
+        <!--<template id="assets_backend" name="rowno_in_tree assets" inherit_id="web.assets_backend">-->
+            <!--<xpath expr="." position="inside">-->
+            	<!--<script type="text/javascript" src="/hhplugins/static/src/js/list_view_rownum.js"></script>-->
+            <!--</xpath>-->
+        <!--</template>-->
+        <template id="assets_backend" name="listview" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/css" href="/hhplugins/static/src/less/dynamic_action_menu.less"/>
+                <link rel="stylesheet" type="text/css" href="/hhplugins/static/src/css/index.css"/>
+                <link rel="stylesheet" type="text/css" href="/hhplugins/static/src/css/config.css"/>
+                <script type="text/javascript" src="/hhplugins/static/src/js/hide_popup_window_footer.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>

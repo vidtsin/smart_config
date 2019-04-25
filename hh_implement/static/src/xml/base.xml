@@ -1,0 +1,53 @@
+<odoo>
+    <!--
+    For any t node and t- things, they are all qweb elements and the inheritance approach is different from that of
+    normal view. You will need to inherit view as qweb when you find no id for the view and t-name exists.
+
+    Points to note:
+    1. Qweb inheritance xml file needs to be placed at static/src/xml/
+    2. This directory is required for the manifest.py file as 'qweb:[static/src/xml/*.xml],
+    3. t-extend is equal to inherit_id
+    4. t-jquery is the same as xpath but the syntax is different ==> node.class_name
+    5. t-operation is same as position, before,after,replace,bla bla bla
+
+    doc: https://supportuae.wordpress.com/2017/09/27/extend-t-name-in-odoo/
+
+    script function:
+    1st jquery.  for removing discuss app from menu (not uninstalled but hidden)
+                 app.id for discuss is 80, so t-if condition is to not render app.id == 80
+
+    2nd jquery.  for removing the odoo logo at the bottom of the dashboard
+
+    -->
+    <!--<templates>-->
+       <!--<t t-extend="AppSwitcher.Content">-->
+           <!--<t t-jquery="div.o_apps" t-operation="replace">-->
+               <!--<div t-if="widget.state.apps.length" class="o_apps">-->
+                   <!--<t t-set="focused_app_index" t-value="widget.get_app_index()"/>-->
+                   <!--<t t-foreach="widget.state.apps" t-if="app.id != '80'" t-as="app">-->
+                       <!--<a-->
+                        <!--t-att-class="'o_app o_menuitem' + ((focused_app_index === app_index)? ' o_focused' : '')"-->
+                        <!--t-att-data-menu="app.id"-->
+                        <!--t-att-data-action-model="app.action ? app.action.split(',')[0] : ''"-->
+                        <!--t-att-data-action-id="app.action"-->
+                        <!--t-att-data-menu-xmlid="app.xmlid"-->
+                        <!--t-att-href="app.href ? app.href : ('#menu_id='+app.id+'&amp;action_id='+app.action)">-->
+                        <!--<div t-if="app.web_icon_data" class="o_app_icon"-->
+                            <!--t-attf-style="background-image: url('#{app.web_icon_data}');"/>-->
+                        <!--<div t-else="" class="o_app_icon"-->
+                            <!--t-attf-style="background-color: #{app.web_icon.background};">-->
+                        <!--<i t-att-class="app.web_icon.class" t-attf-style="color: #{app.web_icon.color};"/>-->
+                        <!--</div>-->
+                        <!--<div class="o_caption"><t t-esc="app.label"/></div>-->
+                      <!--</a>-->
+                   <!--</t>-->
+               <!--</div>-->
+           <!--</t>-->
+       <!--</t>-->
+        <!--<t t-extend="AppSwitcher.Content">-->
+            <!--<t t-jquery="div.o_application_switcher_footer" t-operation="replace">-->
+            <!--</t>-->
+        <!--</t>-->
+    <!--</templates>-->
+
+</odoo>
