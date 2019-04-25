@@ -4,7 +4,7 @@ Documentation
 .. contents::
 
 Before Install Smart Config Module
----------
+------------------------------------
 
 Replace __manifest__.py file in hhplugins with file hhplugins/static/doc/__manifest__.py
 
