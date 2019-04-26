@@ -30,7 +30,7 @@ class hhpluginsCompanyLogoCustomize(models.Model):
         if len(history_img) > 0:
             history_img.unlink()
 
-        image = open('.\\addons\hhplugins\static\img\logo.png', 'wb')
+        image = open('...\\user\\toppwork\smart_config\hhplugins\static\img\logo.png', 'wb')
         image.write(base64.b64decode(vals['datas']))
         res = super(hhpluginsCompanyLogoCustomize, self).create(vals)
         # return {

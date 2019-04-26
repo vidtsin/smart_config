@@ -109,7 +109,8 @@ class HHModuleConfig(models.TransientModel):
                                                                         ('state', 'not in', ['installed', 'to install', 'to upgrade'])])
 
         if 'company_logo_customize' in uninstall_list:
-            copyfile('.\\addons\hhplugins\static\img\default_logo\logo.png', '.\\addons\hhplugins\static\img\logo.png')
+            copyfile('..\\user\\toppwork\smart_config\hhplugins\static\img\default_logo\logo.png', '..\\user\\toppwork\smart_config\hhplugins\static\img\logo.png')
+            # copyfile('.\\addons\hhplugins\static\img\default_logo\logo.png', '.\\addons\hhplugins\static\img\logo.png')
 
         module_to_uninstall = self.env['ir.module.module'].sudo().search([('name', 'in', uninstall_list),
                                                                         ('state', '!=', 'uninstalled')])
