@@ -62,48 +62,57 @@ odoo.define('dynamic_action_menu', function(require) {
         });
 
     Sidebar.include({
+        init: function (parent, options) {
+            this._super.apply(this, arguments);
+            if (options.actions) {
+                this._addToolbarActions(parent,options.actions);
+            }
+        },
+
         _addToolbarActions: function (parent, toolbarActions) {
             var self = this;
-            if (parent["renderer"]["actionItems"]) {
-                _.each(['print', 'action', 'relate'], function (type) {
-                    if (type in toolbarActions) {
-                        var actionArray = [];
-                        _.each(toolbarActions[type], function(actionItem) {
-                            var customActions = parent["renderer"]["actionItems"]['action'];
-                            if ((actionItem.sequence in customActions && customActions[actionItem.sequence])
-                            || type === 'print') {
-                                actionArray.push({
-                                    "label": _t(actionItem.name),
-                                    "action": actionItem
-                                })
-                            }
-                        });
-                        self._addItems(type === 'print' ? 'print' : 'other', actionArray);
+            if(parent['renderer']){
+                if (parent["renderer"]["actionItems"]) {
+                    _.each(['print', 'action', 'relate'], function (type) {
+                        if (type in toolbarActions) {
+                            var actionArray = [];
+                            _.each(toolbarActions[type], function(actionItem) {
+                                var customActions = parent["renderer"]["actionItems"]['action'];
+                                if ((actionItem.sequence in customActions && customActions[actionItem.sequence])
+                                    || type === 'print') {
+                                    actionArray.push({
+                                        "label": _t(actionItem.name),
+                                        "action": actionItem
+                                    })
+                                }
+                            });
+                            self._addItems(type === 'print' ? 'print' : 'other', actionArray);
+                        }
+                    });
+
+
+                    var otherArray = [];  // put the matched item in and return the whole list for addItems()
+                    var customOther = parent['renderer']['actionItems']['other'];  // the dict for storing which items are required
+                    var transOther = {};  // to store the translated customOther dict keys when changing language
+
+                    for (var label in customOther) {  // This for loop is required to translate the dict keys
+                        var translatedLabel = _t(label);
+                        transOther[translatedLabel] = customOther[label];
                     }
-                });
 
 
-            var otherArray = [];  // put the matched item in and return the whole list for addItems()
-            var customOther = parent['renderer']['actionItems']['other'];  // the dict for storing which items are required
-            var transOther = {};  // to store the translated customOther dict keys when changing language
+                    for (var k = 0; k < toolbarActions.other.length; ++k) {
+                        var otherItems = toolbarActions.other[k];
+                        if (otherItems.label in transOther && transOther[otherItems.label] === true) {
+                            otherArray.push(otherItems);
+                        }
+                    }
+                    self._addItems('other', otherArray);
 
-            for (var label in customOther) {  // This for loop is required to translate the dict keys
-                var translatedLabel = _t(label);
-                transOther[translatedLabel] = customOther[label];
-            }
 
-
-            for (var k = 0; k < toolbarActions.other.length; ++k) {
-                var otherItems = toolbarActions.other[k];
-                if (otherItems.label in transOther && transOther[otherItems.label] === true) {
-                    otherArray.push(otherItems);
+                } else {
+                    this._super.apply(this, arguments);
                 }
-            }
-            self._addItems('other', otherArray);
-
-
-            } else {
-                this._super.apply(this, arguments);
             }
         },
 
