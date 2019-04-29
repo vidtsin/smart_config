@@ -1,2 +1,2 @@
 ECHO OFF
-copy .\hhplugins\static\doc\__manifest__.py .\hhplugins\__manifest__.py /y 
+copy ..\static\doc\__manifest__.py ..\__manifest__.py /y 
