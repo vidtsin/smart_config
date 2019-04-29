@@ -38,8 +38,8 @@
         'views/company_logo_customize.xml',
     ],
     "external_dependencies": {"python": [], "bin": []},
-    # 'price': 9.9,
-    # 'currency': 'EUR',
+    'price': 9.9,
+    'currency': 'EUR',
     'demo': [
         'demo/demo.xml',
     ],
