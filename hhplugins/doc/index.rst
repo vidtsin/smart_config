@@ -1,8 +1,9 @@
 Before Install Smart Config Module
 ------------------------------------
-
-Run execute_me.bat file before you put all of the folders under your ODOO addons.
-This file will rewrite the __manifest__.py file under 'hhplugins' module to ensure successful implementation.
+1. Go to hhplugins/EXECUTE_FILE/
+2. Double click to run execute_me_windows.bat if you are running ODOO under windows system.
+3. Give access to execute_me_linux.sh by run 'chmod +x execute_me_linux.sh' before execute it if you are running ODOO under linux system.
+** This file will rewrite the __manifest__.py file under 'hhplugins' module to ensure successful implementation. **
 
 
 Add Files
