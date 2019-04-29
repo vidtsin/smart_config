@@ -1,7 +1,8 @@
 Before Install Smart Config Module
 ------------------------------------
 
-Replace __manifest__.py file in hhplugins (hhplugins/__manifest__.py) with file hhplugins/static/doc/__manifest__.py
+Run execute_me.bat file before you put all of the folders under your ODOO addons.
+This file will rewrite the __manifest__.py file under 'hhplugins' module to ensure successful implementation.
 
 
 Add Files
