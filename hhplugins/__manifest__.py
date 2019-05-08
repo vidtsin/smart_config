@@ -43,6 +43,7 @@
     'demo': [
         'demo/demo.xml',
     ],
+    'demo_url':'https://toppwork-odoo-sh-smart-config-388633.dev.odoo.com/web?#home',
     'installable': True,
     'application': True,
 }
