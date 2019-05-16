@@ -6,12 +6,12 @@
             <field name="model">hhplugins.company.logo.customize</field>
             <field name="inherit_id" ref="base.view_attachment_form"/>
             <field name="arch" type="xml">
-                <xpath expr="//field[@name='type']" position="after">
-                    <field name="res_model" groups="hhplugins.group_hhplugins_admin"/>
-                    <field name="datas_fname" groups="hhplugins.group_hhplugins_admin"/>
-                    <field name="create_uid" groups="hhplugins.group_hhplugins_admin"/>
-                    <field name="create_date" groups="hhplugins.group_hhplugins_admin"/>
-                </xpath>
+                <!--<xpath expr="//field[@name='type']" position="after">-->
+                    <!--<field name="res_model" groups="hhplugins.group_hhplugins_admin"/>-->
+                    <!--<field name="datas_fname" groups="hhplugins.group_hhplugins_admin"/>-->
+                    <!--<field name="create_uid" groups="hhplugins.group_hhplugins_admin"/>-->
+                    <!--<field name="create_date" groups="hhplugins.group_hhplugins_admin"/>-->
+                <!--</xpath>-->
                 <xpath expr="//field[@name='type']" position="attributes">
                    <attribute name="invisible">1</attribute>
                 </xpath>
@@ -76,7 +76,7 @@
             <field name="act_window_id" ref="hhplugins_action_attachment"/>
         </record>
 
-        <menuitem id="hhplugins_company_logo_menu" name="Company Logos" sequence="4"
-            parent="hhplugins_technical_module_detail_menu" action="hhplugins_action_attachment" />
+        <!--<menuitem id="hhplugins_company_logo_menu" name="Company Logos" sequence="4"-->
+            <!--parent="hhplugins_technical_module_detail_menu" action="hhplugins_action_attachment" />-->
     </data>
 </odoo>

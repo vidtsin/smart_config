@@ -8,8 +8,7 @@
             <field name="inherit_id" ref="base.res_config_settings_view_form"/>
             <field name="arch" type="xml">
                 <xpath expr="//div[hasclass('settings')]" position="inside">
-                    <div class="app_settings_block" data-string="Smart Config" data-key="hhplugins" string="Smart Config"
-                    groups="hhplugins.group_hhplugins_user">
+                    <div class="app_settings_block" data-string="Smart Config" data-key="hhplugins" string="Smart Config">
                         <h2>Module To Install</h2>
                         <div class="row mt16 o_settings_container">
                             <div class="col-xs-12 col-md-6 o_setting_box">
@@ -181,11 +180,8 @@
             <field name="context">{'module' : 'hhplugins'}</field>
         </record>
 
-      <menuitem id="hhplugins_menu_root" name="Smart Config" sequence="0" web_icon="hhplugins,static/description/icon.png"
-
-                groups="hhplugins.group_hhplugins_user"/>
+      <menuitem id="hhplugins_menu_root" name="Smart Config" sequence="0" web_icon="hhplugins,static/description/icon.png"/>
       <menuitem id="hhplugins_module_configuration_menu" name="Settings Modules" sequence="1" parent="hhplugins_menu_root"
-                action="hhplugins_module_configuration_action"
-                groups="hhplugins.group_hhplugins_user"/>
+                action="hhplugins_module_configuration_action"/>
     </data>
 </odoo>

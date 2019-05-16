@@ -108,10 +108,10 @@
             <!--<field name="context">{'module' : 'hhplugins'}</field>-->
         </record>
 
-        <menuitem id="hhplugins_technical_module_detail_menu" name="Technical Module Detail" sequence="3"
-                parent="hhplugins_menu_root" groups="hhplugins.group_hhplugins_admin"/>
-        <menuitem id="hhplugins_checkbox_remover_detail_menu" name="Checkbox Remover Detail" sequence="0"
-            parent="hhplugins_technical_module_detail_menu" action="hhplugins_checkbox_remover_detail_action" />
+        <!--<menuitem id="hhplugins_technical_module_detail_menu" name="Technical Module Detail" sequence="3"-->
+                <!--parent="hhplugins_menu_root" groups="hhplugins.group_hhplugins_admin"/>-->
+        <!--<menuitem id="hhplugins_checkbox_remover_detail_menu" name="Checkbox Remover Detail" sequence="0"-->
+            <!--parent="hhplugins_technical_module_detail_menu" action="hhplugins_checkbox_remover_detail_action" />-->
 
     </data>
 </odoo>
