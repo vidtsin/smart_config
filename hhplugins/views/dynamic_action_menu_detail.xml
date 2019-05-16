@@ -121,8 +121,8 @@
             <!--<field name="context">{'module' : 'hhplugins'}</field>-->
         </record>
 
-        <menuitem id="hhplugins_dynamic_action_menu_detail_menu" name="Dynamic Action Menu Detail" sequence="1"
-            parent="hhplugins_technical_module_detail_menu" action="hhplugins_dynamic_action_menu_detail_action" />
+        <!--<menuitem id="hhplugins_dynamic_action_menu_detail_menu" name="Dynamic Action Menu Detail" sequence="1"-->
+            <!--parent="hhplugins_technical_module_detail_menu" action="hhplugins_dynamic_action_menu_detail_action" />-->
 
     </data>
 </odoo>

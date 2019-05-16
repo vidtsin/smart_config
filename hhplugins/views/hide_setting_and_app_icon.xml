@@ -1,0 +1,12 @@
+<odoo>
+    <!-- Override - employee module's root menu - groups access rights -->
+    <record id="base.menu_management" model="ir.ui.menu">
+        <field name="groups_id" eval="[(5,0,0),(4, ref('hhplugins.group_hhplugins_user'))]"/>
+    </record>
+
+    <!--Override - mail module("discuss")'s root menu - groups access rights -->
+    <record id="base.menu_administration" model="ir.ui.menu">
+        <field name="groups_id" eval="[(5,0,0),(4, ref('hhplugins.group_hhplugins_user'))]"/>
+    </record>
+
+</odoo>

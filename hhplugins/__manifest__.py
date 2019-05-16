@@ -36,6 +36,7 @@
         'views/dynamic_action_menu_detail.xml',
         'views/hide_create_or_import_btn_detail.xml',
         'views/company_logo_customize.xml',
+        'views/hide_setting_and_app_icon.xml',
     ],
     "external_dependencies": {"python": [], "bin": []},
     'price': 9.9,

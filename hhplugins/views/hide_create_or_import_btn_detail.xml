@@ -130,8 +130,8 @@
             <!--<field name="context">{'module' : 'hhplugins'}</field>-->
         </record>
 
-        <menuitem id="hhplugins_hide_create_import_button_detail_menu" name="Hide Create/Import Button Detail" sequence="2"
-            parent="hhplugins_technical_module_detail_menu" action="hhplugins_hide_create_import_button_detail_action" />
+        <!--<menuitem id="hhplugins_hide_create_import_button_detail_menu" name="Hide Create/Import Button Detail" sequence="2"-->
+            <!--parent="hhplugins_technical_module_detail_menu" action="hhplugins_hide_create_import_button_detail_action" />-->
 
     </data>
 </odoo>

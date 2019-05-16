@@ -17,7 +17,7 @@
     <record id="group_hhplugins_admin" model="res.groups">
         <field name="name">Administrator</field>
         <field name="category_id" ref="hhplugins.module_category_hhplugins"/>
-        <field name="implied_ids" eval="[(4, ref('hhplugins.group_hhplugins_user'))]"/>
+        <!--<field name="implied_ids" eval="[(4, ref('hhplugins.group_hhplugins_user'))]"/>-->
     </record>
 
 </odoo>
