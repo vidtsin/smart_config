@@ -30,6 +30,7 @@
         # 'views/hide_setting_and_app_icon.xml',
     ],
     'price': 9.9,
+    'currency': 'EUR',
     'demo': [
         'demo/demo.xml',
     ],
