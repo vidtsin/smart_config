@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields, api
+from odoo import models, fields, api, os
 import base64
 
 
@@ -30,6 +30,10 @@ class hhpluginsCompanyLogoCustomize(models.Model):
         if len(history_img) > 0:
             history_img.unlink()
 
+        try:
+            os.remove('/home/odoo/src/user/toppwork/smart_config/hhplugins/static/img/logo.png')
+        except FileNotFoundError:
+            pass
         image = open('/home/odoo/src/user/toppwork/smart_config/hhplugins/static/img/logo.png', 'wb')
         image.write(base64.b64decode(vals['datas']))
         res = super(hhpluginsCompanyLogoCustomize, self).create(vals)
